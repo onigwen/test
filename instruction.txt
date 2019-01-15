@@ -3,7 +3,7 @@
 2. open directory execute "git init"
 
 2. execute cmd
-git clone https://github.com/sixtoabella/testproject.git
+git clone https://github.com/onigwen/test.git
 
 3. once downloaded execute command node server.js
 
