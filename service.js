@@ -64,7 +64,7 @@ exports.testRequest = function (req, res) {
                     compute = compute - disc;  
                 }
 
-                result = {"prod_code": jsonContent.ult_small[0],"numitembuy": postBody.numitem, "total": Math.round(compute * 100) / 100}
+                result = {"prod_code": jsonContent.ult_small[0],"numitembuy": postBody.numitem, "total": Math.round(compute * 100) / 100, "disccode": postBody.discount}
 
                  
                 break;
@@ -77,9 +77,10 @@ exports.testRequest = function (req, res) {
                     disc = compute * .10;
                     compute = compute - disc;  
                 }
-
-                result = {"prod_code": jsonContent.ult_medium[0], "bundle": jsonContent.utl_1gb[0] ,"numitembuy": postBody.numitem, "total": Math.round(compute* 100) / 100}
                 
+            
+
+                result = {"prod_code": jsonContent.ult_small[0],"numitembuy": postBody.numitem, "total": Math.round(compute * 100) / 100, "disccode": postBody.discount}
                 break;
 
             case "ult_large":
@@ -95,8 +96,7 @@ exports.testRequest = function (req, res) {
                     compute = compute - disc;  
                 }
 
-                result = {"prod_code": jsonContent.ult_medium[0], "bundle": jsonContent.utl_1gb[0] ,"numitembuy": postBody.numitem, "total": Math.round(compute* 100) / 100}
-                
+                result = {"prod_code": jsonContent.ult_small[0],"numitembuy": postBody.numitem, "total": Math.round(compute * 100) / 100, "disccode": postBody.discount}
 
                 break;
         }
