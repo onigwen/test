@@ -1,0 +1,20 @@
+1. create a directory 
+
+2. open directory execute "git init"
+
+2. execute cmd
+git clone https://github.com/sixtoabella/testproject.git
+
+3. once downloaded execute command node server.js
+
+files
+
+Controller - this is for the routes
+
+Server - main file to be call in order to run the web server
+
+Service - this all the methods being declared
+
+
+
+
